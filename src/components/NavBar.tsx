@@ -1,11 +1,12 @@
 import logoPath from '../assets/logo.png'
 import { HStack, Image, Text } from '@chakra-ui/react'
+import ColorModeSwitch from './ColorModeSwitch'
 
 const NavBar = () => {
   return (
-    <HStack >
+    <HStack justify={"space-between"} p={5}>
         <Image src={logoPath} boxSize={{ base: '45px', sm: '70px' }} borderRadius='50%' alt="logo" />
-        <Text fontSize={{ base: '20px', md: '30px' }}>React Game Platform</Text>
+       <ColorModeSwitch />
     </HStack>
   )
 }
