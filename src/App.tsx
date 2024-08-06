@@ -1,7 +1,9 @@
-
+import { Grid, GridItem } from '@chakra-ui/react'
 const App = () => {
   return (
-    <div>App</div>
+    <Grid >
+      <GridItem>Nav</GridItem>
+    </Grid>
   )
 }
 export default App
